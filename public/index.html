@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Property Website Publisher</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <main class="page">
+      <section class="publisher" aria-labelledby="page-title">
+        <div class="eyebrow">Internal publishing tool</div>
+
+        <h1 id="page-title">Property Website Publisher</h1>
+
+        <p class="intro">
+          Make your changes in Airtable, then publish them to the website here.
+        </p>
+
+        <div class="status-card" aria-live="polite">
+          <div class="status-row">
+            <span id="status-dot" class="status-dot ready" aria-hidden="true"></span>
+            <div>
+              <span class="status-label">Status</span>
+              <strong id="status-title">Ready to publish</strong>
+            </div>
+          </div>
+
+          <p id="status-message" class="status-message">
+            Enter the access code and publish when the Airtable changes are ready.
+          </p>
+
+          <a
+            id="workflow-link"
+            class="workflow-link hidden"
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open workflow details
+          </a>
+        </div>
+
+        <label class="field" for="access-code">
+          <span>Access code</span>
+          <input
+            id="access-code"
+            type="password"
+            autocomplete="current-password"
+            placeholder="Enter access code"
+          />
+        </label>
+
+        <button id="publish-button" type="button">
+          <span id="button-label">Publish website changes</span>
+          <span id="button-spinner" class="spinner hidden" aria-hidden="true"></span>
+        </button>
+
+        <p class="help">
+          Keep this page open while the update is running. It normally finishes
+          within a minute.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
