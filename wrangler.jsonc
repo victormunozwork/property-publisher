@@ -10,7 +10,7 @@
   },
   "vars": {
     "GITHUB_OWNER": "victormunozwork",
-    "GITHUB_REPO": "property-publisher",
+    "GITHUB_REPO": "airtable-json-test",
     "GITHUB_WORKFLOW_ID": "update-json.yml",
     "GITHUB_BRANCH": "main"
   }
