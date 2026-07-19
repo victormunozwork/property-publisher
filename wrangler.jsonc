@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "property-publisher",
+  "main": "src/index.js",
+  "compatibility_date": "2026-07-19",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    "GITHUB_OWNER": "REPLACE_WITH_GITHUB_USERNAME_OR_ORG",
+    "GITHUB_REPO": "REPLACE_WITH_REPOSITORY_NAME",
+    "GITHUB_WORKFLOW_ID": "update-json.yml",
+    "GITHUB_BRANCH": "main"
+  }
+}
